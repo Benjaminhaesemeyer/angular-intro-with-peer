@@ -7,8 +7,8 @@ myApp.controller('displayController', function(){
 var display = this;
 // name.message = this;
 console.log(this);
-display.name = 'Enter name below';
-display.message = 'Enter message below';
+display.name = 'Name:';
+display.message = 'Message:';
 
 display.people = [];
 display.addPerson = function(nameBox, messageBox) {
@@ -21,5 +21,6 @@ display.addPerson = function(nameBox, messageBox) {
 display.delete = function(spot) {
   display.people.splice(spot, 1);
 };
+
 
 });//end of myApp.controller
