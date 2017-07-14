@@ -17,4 +17,9 @@ display.addPerson = function(nameBox, messageBox) {
   console.log(display.people);
 };
 
+//create a display.delete function
+display.delete = function(spot) {
+  display.people.splice(spot, 1);
+};
+
 });//end of myApp.controller

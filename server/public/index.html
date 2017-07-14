@@ -19,6 +19,7 @@
       <div ng-repeat="person in display.people">
         <p>{{person.nameBox}}</p>
         <p>{{person.messageBox}}</p>
+        <button ng-click="display.delete($index)">Remove</button>
       </div>
     </div>
   </body>
